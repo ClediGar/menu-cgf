@@ -1,0 +1,66 @@
+/* ____________________________*/
+/*           HEADER            */
+/* ___________________________ */
+
+/*      NAVBAR */
+
+@media screen and (max-width: 630px) {
+    /*-------------MENU HAMBURGUER------------ */
+    header nav#nav-esq {
+        justify-content: space-between;
+    }
+
+    header nav#nav-esq ul#icone-menu {
+        display: flex;
+    }
+
+    header nav#nav-esq ul#icone-menu {
+        display: flex;
+    }
+    header nav#nav-esq ul#icone-menu li#menuX {
+        display: none;
+    }
+
+
+
+    /* _____________MENU_______________ */
+    header nav#nav-esq ul#menu-principal {
+        flex-direction: column;
+        width: 80%;
+        height: 85vh;
+
+        background-image: url('../img/AROk.gif'); /* Substitua pelo caminho da sua imagem */
+        background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+        background-position: center; /* Centraliza a imagem */
+        
+        padding-top: .5rem;
+        position: absolute;
+        top: 9.3rem;
+        right: 0;
+        z-index: 999;
+        display: none;
+      }
+      
+      header nav#nav-esq ul#menu-principal::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8); /* Cor preta com 50% de opacidade */
+        z-index: -1;
+      }
+      
+      
+
+    header nav#nav-esq ul#menu-principal li {
+        margin: .5rem;
+        margin-left: 1rem;
+    }
+
+    header nav#nav-esq ul#menu-principal li a {
+        font-size: 120%;
+    }
+
+}

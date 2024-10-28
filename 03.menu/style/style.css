@@ -1,0 +1,112 @@
+/* 
+CORES
+Amarelo queimado = #BF7E04;
+Amarelo queimado mais escuro = #A64F03;
+Marron vermelho = #BC2703;
+Verniz claro = #591202;
+Verniz escuro = #260101;
+
+FONTES
+font famyli: 'Fredericka the Great', cursive;
+font famyli: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+*/
+
+/* Zerar algumas coisas: margin, padding... */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------HEADER----------*/
+header {
+    width: 100%;
+    height: 95vh;
+}
+
+/* ------ NAVBAR --------- */
+header nav#nav-esq {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    /* background-color: #260101; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+  
+header nav#nav-esq::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/capa-header-gif.gif'); /* Substitua pelo caminho do seu GIF */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Certifique-se de que a imagem fique atrás dos elementos */
+}
+  
+  
+
+/*DIV Logo*/
+header nav#nav-esq div#logo {
+    width: 100px;
+    height: 120px;
+    margin-left: 5rem;
+}
+
+/*IMG logo*/
+header nav#nav-esq div#logo img {
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+/*---------- MENU HAMBURGUER , trabalhar ele, depois dazer ele sumir----------*/
+header nav#nav-esq ul#icone-menu {
+    display: none;
+}
+
+header nav#nav-esq ul#icone-menu li {
+    list-style: none;
+}
+
+header nav#nav-esq ul#icone-menu li ion-icon {
+    font-size: 50px;
+    color: #fff;
+    margin-right: 2rem;
+}
+
+header nav#nav-esq ul#menu-principal {
+    margin-left: 5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+header nav#nav-esq ul#menu-principal li {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+header nav#nav-esq ul#menu-principal li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 120%;
+    text-shadow: 4px 6px 10px #000;  /*Sombra do texto*/
+    padding-bottom: 10px;
+    transition: .3s ease-out;
+}
+
+/* ----------HOVER, quando passar o mouse em cima da ul e li vai acontecer alguma coisa------------- */
+header nav#nav-esq ul#menu-principal li a:hover {
+    border-bottom: 1px solid #fff;
+    opacity: .6;
+}
